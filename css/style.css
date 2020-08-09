@@ -1,0 +1,37 @@
+/** Typography**/
+/**Reset**/
+* {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+/**Header**/
+header {
+  background-color: #24ccff;
+  color: white; }
+  header .logo {
+    color: white;
+    font-size: 30px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; }
+  header .meun {
+    padding-top: 10px; }
+    header .meun li {
+      list-style: none;
+      display: inline-block; }
+      header .meun li a {
+        color: white;
+        padding: 0 10px;
+        transition: 0.5s; }
+        header .meun li a:hover {
+          color: black; }
+
+/**Main content**/
+.main-content {
+  background: url(../img/bg.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: 100% 100%; }
