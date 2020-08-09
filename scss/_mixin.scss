@@ -1,0 +1,18 @@
+/*mixin*/
+@mixin title($font-size) {
+  color: $primary-color;
+  font-size: 100px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 20px;
+}
+@mixin sub_title {
+  text-transform: uppercase;
+  font-size: 17px;
+}
+@mixin middle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 50%);
+}
+

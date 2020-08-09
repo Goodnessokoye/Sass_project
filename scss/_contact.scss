@@ -1,0 +1,36 @@
+/**Contact Section**/
+
+.contact-section {
+  background-color: #0d0000cc;
+  height: 100px;
+  position: relative;
+
+  button {
+    background-color: transparent;
+    border: 1px solid $primary-color;
+    color: $meun-color;
+    padding: 10px 30px;
+    position: relative;
+    @include middle;
+
+    &:hover::after {
+      transform: scaleX(1);
+    }
+
+    &::after {
+      content: "";
+      background-color: $primary-color;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transform: scaleX(0);
+
+      transform-origin: (0 0);
+
+      transition: 0.5s;
+    }
+  }
+}

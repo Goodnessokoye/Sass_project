@@ -1,57 +1,7 @@
-/** Typography**/
-$primary-color: #24ccff;
-$meun-color: white;
-
-/**Reset**/
-* {
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: none;
-  }
-}
-
-/**Header**/
-
-header {
-  background-color: $primary-color;
-  color: $meun-color;
-
-  .logo {
-    color: $meun-color;
-    font-size: 30px;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  }
-
-  .meun {
-    padding-top: 10px;
-    li {
-      list-style: none;
-      display: inline-block;
-      //   padding: 15px;
-
-      a {
-        color: $meun-color;
-        padding: 0 10px;
-        transition: 0.5s;
-
-        &:hover {
-          color: black;
-        }
-      }
-    }
-  }
-}
-
-/**Main content**/
-.main-content {
-  background: url(../img/bg.jpg);
-  height: 100vh;
-  background-size: cover;
-  background-position: 100% 100%;
-}
+@import "reset";
+@import "mixin";
+@import "typography";
+@import "header";
+@import "portfolio";
+@import "content";
+@import "contact";

@@ -1,37 +1,140 @@
-/** Typography**/
 /**Reset**/
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 a {
-  text-decoration: none; }
-  a:hover {
-    text-decoration: none; }
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
 
+/*mixin*/
+/** Typography**/
 /**Header**/
 header {
   background-color: #24ccff;
-  color: white; }
-  header .logo {
-    color: white;
-    font-size: 30px;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; }
-  header .meun {
-    padding-top: 10px; }
-    header .meun li {
-      list-style: none;
-      display: inline-block; }
-      header .meun li a {
-        color: white;
-        padding: 0 10px;
-        transition: 0.5s; }
-        header .meun li a:hover {
-          color: black; }
+  color: white;
+}
+header .logo {
+  color: white;
+  font-size: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+header .meun {
+  padding-top: 10px;
+}
+header .meun li {
+  list-style: none;
+  display: inline-block;
+}
+header .meun li a {
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 0 10px;
+  transition: 0.5s;
+}
+header .meun li a:hover {
+  color: black;
+}
+
+/**portfolio section**/
+.portfolio-section .portfolio-title {
+  padding: 30px 0;
+}
+.portfolio-section .portfolio-title h1 {
+  color: #24ccff;
+  font-size: 100px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 20px;
+}
+.portfolio-section .portfolio-title h5 {
+  text-transform: uppercase;
+  font-size: 17px;
+}
+.portfolio-section .portfolio-content .portfolio-upper {
+  margin-bottom: 25px;
+}
+.portfolio-section .portfolio-content .overlay-relative {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-section .portfolio-content .overlay-relative:hover .over-lay {
+  top: 0;
+  cursor: pointer;
+}
+.portfolio-section .portfolio-content .over-lay {
+  background-color: #281818c4;
+  position: absolute;
+  left: 15px;
+  top: -100%;
+  width: 92%;
+  height: 100%;
+  transition: 0.5s;
+}
+.portfolio-section .portfolio-content .over-lay p {
+  color: white;
+  padding: 40px;
+}
 
 /**Main content**/
 .main-content {
   background: url(../img/bg.jpg);
   height: 100vh;
   background-size: cover;
-  background-position: 100% 100%; }
+  background-position: 100% 100%;
+  position: relative;
+}
+.main-content .main-content-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 50%);
+}
+.main-content .main-content-wrapper h1 {
+  color: #24ccff;
+  font-size: 100px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 20px;
+}
+.main-content .main-content-wrapper h5 {
+  text-transform: uppercase;
+  font-size: 17px;
+}
+
+/**Contact Section**/
+.contact-section {
+  background-color: #0d0000cc;
+  height: 100px;
+  position: relative;
+}
+.contact-section button {
+  background-color: transparent;
+  border: 1px solid #24ccff;
+  color: white;
+  padding: 10px 30px;
+  position: relative;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 50%);
+}
+.contact-section button:hover::after {
+  transform: scaleX(1);
+}
+.contact-section button::after {
+  content: "";
+  background-color: #24ccff;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: 0 0;
+  transition: 0.5s;
+}
