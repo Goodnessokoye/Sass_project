@@ -3,11 +3,7 @@
     background-color: blueviolet;
     color: white;
   }
-  header .meun li {
-    list-style: none;
-    display: flex;
-    justify-content: end;
-  }
+
   .main-content {
     height: 55vh;
   }
