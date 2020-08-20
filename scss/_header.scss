@@ -3,6 +3,9 @@
 header {
   background-color: $primary-color;
   color: $meun-color;
+  position: sticky;
+  z-index: 100;
+  top: 0;
 
   .logo {
     color: $meun-color;

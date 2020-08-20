@@ -1,7 +1,10 @@
 @media (max-width: 768px) {
   header {
-    background-color: blueviolet;
+    background-color: #24ccff;
     color: white;
+    position: sticky;
+    z-index: 100;
+    top: 0;
   }
 
   .main-content {
